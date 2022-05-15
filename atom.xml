@@ -1,51 +1,69 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-  <title>keennessNewBie</title>
+  <title>KeennessNewBie</title>
   
   
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2022-03-12T04:21:29.787Z</updated>
+  <updated>2022-05-15T15:35:55.516Z</updated>
   <id>http://example.com/</id>
   
   <author>
-    <name>keennessNewBie</name>
+    <name>KeennessNewBie</name>
     
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>hello world</title>
-    <link href="http://example.com/2022/03/12/hello-world-1/"/>
-    <id>http://example.com/2022/03/12/hello-world-1/</id>
-    <published>2022-03-12T04:21:29.000Z</published>
-    <updated>2022-03-12T04:21:29.787Z</updated>
+    <title>反转链表</title>
+    <link href="http://example.com/2022/05/15/leetcode/206/"/>
+    <id>http://example.com/2022/05/15/leetcode/206/</id>
+    <published>2022-05-15T14:45:48.000Z</published>
+    <updated>2022-05-15T15:35:55.516Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="206-反转链表"><a href="#206-反转链表" class="headerlink" title="206. 反转链表"></a><a href="https://leetcode.cn/problems/reverse-linked-list/">206. 反转链表</a></h1><h2 id="两种解法"><a href="#两种解法" class="headerlink" title="两种解法"></a>两种解法</h2><h3 id="循环"><a href="#循环" class="headerlink" title="循环"></a>循环</h3><ol><li><p>三个节点 pre cur tmp</p></li><li><p>保存当前节点的下一个节点到 tmp</p></li><li><p>将当前节点的 next 指向上一个节点 cur.next &#x3D; pre</p></li><li><p>将 pre 和 cur 都向后移动<br>code：</p><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">Solution</span> &#123;</span><br><span class="line"> <span class="keyword">public</span> ListNode <span class="title function_">reverseList</span><span class="params">(ListNode head)</span> &#123;</span><br><span class="line">     <span class="type">ListNode</span> <span class="variable">tmp</span> <span class="operator">=</span> <span class="literal">null</span>;</span><br><span class="line">     <span class="type">ListNode</span> <span class="variable">cur</span> <span class="operator">=</span> head;</span><br><span class="line">     <span class="type">ListNode</span> <span class="variable">pre</span> <span class="operator">=</span> <span class="literal">null</span>;</span><br><span class="line">     <span class="keyword">while</span>(cur !=<span class="literal">null</span>)&#123;</span><br><span class="line">         tmp = cur.next;</span><br><span class="line">         cur.next = pre;</span><br><span class="line">         pre = cur;</span><br><span class="line">         cur = tmp;</span><br><span class="line">     &#125;</span><br><span class="line">     <span class="keyword">return</span> pre;</span><br><span class="line"> &#125;</span><br></pre></td></tr></table></figure></li></ol>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h1 id=&quot;206-反转链表&quot;&gt;&lt;a href=&quot;#206-反转链表&quot; class=&quot;headerlink&quot; title=&quot;206. 反转链表&quot;&gt;&lt;/a&gt;&lt;a href=&quot;https://leetcode.cn/problems/reverse-linked-list/&quot;&gt;2</summary>
+      
     
     
     
+    <category term="leetcode" scheme="http://example.com/categories/leetcode/"/>
     
+    
+    <category term="单链表" scheme="http://example.com/tags/%E5%8D%95%E9%93%BE%E8%A1%A8/"/>
+    
+    <category term="递归" scheme="http://example.com/tags/%E9%80%92%E5%BD%92/"/>
     
   </entry>
   
   <entry>
-    <title>Hello World</title>
-    <link href="http://example.com/2022/03/12/hello-world/"/>
-    <id>http://example.com/2022/03/12/hello-world/</id>
-    <published>2022-03-12T03:58:23.310Z</published>
-    <updated>2022-03-12T03:58:23.310Z</updated>
+    <title>hello world</title>
+    <link href="http://example.com/2022/03/12/hello-world-1/"/>
+    <id>http://example.com/2022/03/12/hello-world-1/</id>
+    <published>2022-03-12T04:21:29.000Z</published>
+    <updated>2022-05-15T14:33:48.132Z</updated>
     
-    <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>]]></content>
+    <content type="html"><![CDATA[<p>knb 的 <code>hello world</code></p>]]></content>
     
     
       
       
-    <summary type="html">&lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;https://hexo.io/docs/&quot;&gt;documentation&lt;/a&gt; for</summary>
+    <summary type="html">&lt;p&gt;knb 的 &lt;code&gt;hello world&lt;/code&gt;&lt;/p&gt;
+</summary>
       
     
     
     
+    <category term="测试hello categories" scheme="http://example.com/categories/%E6%B5%8B%E8%AF%95hello-categories/"/>
+    
+    
+    <category term="测试hello tag" scheme="http://example.com/tags/%E6%B5%8B%E8%AF%95hello-tag/"/>
     
   </entry>
   
