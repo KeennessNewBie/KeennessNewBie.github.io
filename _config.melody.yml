@@ -31,7 +31,7 @@ favicon: /melody-favicon.ico
 # See https://github.com/JLHwung/hexo-offline
 # ---------------
 pwa:
-  enable: false
+  enable: true
   manifest: /manifest.json
   # If you don't want to trouble, just ignore the following things
   # See https://realfavicongenerator.net/
