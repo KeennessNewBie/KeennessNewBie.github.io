@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>http://example.com/2022/10/05/leetcode/21/</loc>
+    <loc>https://keennessnewbie.github.io/2022/10/05/leetcode/21/</loc>
     
     <lastmod>2022-10-05</lastmod>
     
@@ -11,7 +11,7 @@
   </url>
   
   <url>
-    <loc>http://example.com/tags/index.html</loc>
+    <loc>https://keennessnewbie.github.io/tags/index.html</loc>
     
     <lastmod>2022-05-18</lastmod>
     
@@ -20,7 +20,7 @@
   </url>
   
   <url>
-    <loc>http://example.com/categories/index.html</loc>
+    <loc>https://keennessnewbie.github.io/categories/index.html</loc>
     
     <lastmod>2022-05-18</lastmod>
     
@@ -29,7 +29,7 @@
   </url>
   
   <url>
-    <loc>http://example.com/2022/05/15/leetcode/206/</loc>
+    <loc>https://keennessnewbie.github.io/2022/05/15/leetcode/206/</loc>
     
     <lastmod>2022-05-18</lastmod>
     
@@ -38,7 +38,7 @@
   </url>
   
   <url>
-    <loc>http://example.com/2022/03/12/hello-world-1/</loc>
+    <loc>https://keennessnewbie.github.io/2022/03/12/hello-world-1/</loc>
     
     <lastmod>2022-05-18</lastmod>
     
@@ -48,7 +48,7 @@
   
 
   <url>
-    <loc>http://example.com/</loc>
+    <loc>https://keennessnewbie.github.io/</loc>
     <lastmod>2022-10-05</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
@@ -56,21 +56,21 @@
 
   
   <url>
-    <loc>http://example.com/tags/%E6%B5%8B%E8%AF%95hello-tag/</loc>
+    <loc>https://keennessnewbie.github.io/tags/%E6%B5%8B%E8%AF%95hello-tag/</loc>
     <lastmod>2022-10-05</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>http://example.com/tags/%E5%8D%95%E9%93%BE%E8%A1%A8/</loc>
+    <loc>https://keennessnewbie.github.io/tags/%E5%8D%95%E9%93%BE%E8%A1%A8/</loc>
     <lastmod>2022-10-05</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>http://example.com/tags/%E9%80%92%E5%BD%92/</loc>
+    <loc>https://keennessnewbie.github.io/tags/%E9%80%92%E5%BD%92/</loc>
     <lastmod>2022-10-05</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -79,14 +79,14 @@
 
   
   <url>
-    <loc>http://example.com/categories/%E6%B5%8B%E8%AF%95hello-categories/</loc>
+    <loc>https://keennessnewbie.github.io/categories/%E6%B5%8B%E8%AF%95hello-categories/</loc>
     <lastmod>2022-10-05</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>http://example.com/categories/leetcode/</loc>
+    <loc>https://keennessnewbie.github.io/categories/leetcode/</loc>
     <lastmod>2022-10-05</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>

@@ -1,94 +1,84 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom">
-  <title>KeennessNewBie</title>
+<search>
   
   
-  <link href="https://keennessnewbie.github.io/atom.xml" rel="self"/>
-  
-  <link href="https://keennessnewbie.github.io/"/>
-  <updated>2022-10-05T08:20:07.599Z</updated>
-  <id>https://keennessnewbie.github.io/</id>
-  
-  <author>
-    <name>KeennessNewBie</name>
-    
-  </author>
-  
-  <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
     <title>合并两个有序链表</title>
-    <link href="https://keennessnewbie.github.io/2022/10/05/leetcode/21/"/>
-    <id>https://keennessnewbie.github.io/2022/10/05/leetcode/21/</id>
-    <published>2022-10-05T08:11:18.000Z</published>
-    <updated>2022-10-05T08:20:07.599Z</updated>
+    <link href="/2022/10/05/leetcode/21/"/>
+    <url>/2022/10/05/leetcode/21/</url>
     
     <content type="html"><![CDATA[<h1 id="21-合并两个有序链表"><a href="#21-合并两个有序链表" class="headerlink" title="21.合并两个有序链表"></a><a href="https://leetcode.cn/problems/merge-two-sorted-lists/">21.合并两个有序链表</a></h1><p>比较简单，每次把较小的链表节点接到一个虚拟头结点后即可，这里对于两个链表长度处理的方式：</p><ol><li>先把两个链表按相同长度进行拼接</li><li>较长的链表接入新链表后续即可</li></ol><p>代码如下</p><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br></pre></td><td class="code"><pre><code class="hljs java"><span class="hljs-keyword">class</span> <span class="hljs-title class_">Solution</span> &#123;<br>    <span class="hljs-keyword">public</span> ListNode <span class="hljs-title function_">mergeTwoLists</span><span class="hljs-params">(ListNode list1, ListNode list2)</span> &#123;<br>        <span class="hljs-type">ListNode</span> <span class="hljs-variable">newHead</span> <span class="hljs-operator">=</span> <span class="hljs-keyword">new</span> <span class="hljs-title class_">ListNode</span>();<br>        <span class="hljs-type">ListNode</span> <span class="hljs-variable">l1</span> <span class="hljs-operator">=</span> list1,l2 = list2;<br>        <span class="hljs-type">ListNode</span> <span class="hljs-variable">tmp</span> <span class="hljs-operator">=</span> newHead;<br><br><span class="hljs-comment">// 取相同长度部分进行拼接</span><br>        <span class="hljs-keyword">while</span>(l1 != <span class="hljs-literal">null</span> &amp;&amp; l2 != <span class="hljs-literal">null</span>)&#123;<br>            <span class="hljs-keyword">if</span> (l1.val&gt;l2.val)&#123;<br>                tmp.next = l2;<br>                l2 = l2.next;<br>            &#125;<span class="hljs-keyword">else</span>&#123;<br>                tmp.next = l1;<br>                l1 = l1.next;<br>            &#125;<br>            tmp = tmp.next;<br>        &#125;<br><span class="hljs-comment">// 接入更长的链表的剩余部分</span><br>        <span class="hljs-keyword">if</span>(l1 != <span class="hljs-literal">null</span>)&#123;<br>            tmp.next = l1;<br>        &#125;<br>        <span class="hljs-keyword">if</span> (l2 != <span class="hljs-literal">null</span>)&#123;<br>            tmp.next = l2;<br>        &#125;<br>        <span class="hljs-keyword">return</span> newHead.next;<br>    &#125;<br>&#125;<br></code></pre></td></tr></table></figure>]]></content>
     
     
+    <categories>
       
+      <category>leetcode</category>
       
-    <summary type="html">&lt;h1 id=&quot;21-合并两个有序链表&quot;&gt;&lt;a href=&quot;#21-合并两个有序链表&quot; class=&quot;headerlink&quot; title=&quot;21.合并两个有序链表&quot;&gt;&lt;/a&gt;&lt;a href=&quot;https://leetcode.cn/problems/merge-two-sorte</summary>
+    </categories>
+    
+    
+    <tags>
       
-    
-    
-    
-    <category term="leetcode" scheme="https://keennessnewbie.github.io/categories/leetcode/"/>
-    
-    
-    <category term="单链表" scheme="https://keennessnewbie.github.io/tags/%E5%8D%95%E9%93%BE%E8%A1%A8/"/>
+      <tag>单链表</tag>
+      
+    </tags>
     
   </entry>
   
+  
+  
   <entry>
     <title>反转链表</title>
-    <link href="https://keennessnewbie.github.io/2022/05/15/leetcode/206/"/>
-    <id>https://keennessnewbie.github.io/2022/05/15/leetcode/206/</id>
-    <published>2022-05-15T14:45:48.000Z</published>
-    <updated>2022-05-18T16:03:07.757Z</updated>
+    <link href="/2022/05/15/leetcode/206/"/>
+    <url>/2022/05/15/leetcode/206/</url>
     
     <content type="html"><![CDATA[<h1 id="206-反转链表"><a href="#206-反转链表" class="headerlink" title="206. 反转链表"></a><a href="https://leetcode.cn/problems/reverse-linked-list/">206. 反转链表</a></h1><h2 id="两种解法"><a href="#两种解法" class="headerlink" title="两种解法"></a>两种解法</h2><h3 id="循环"><a href="#循环" class="headerlink" title="循环"></a>循环</h3><ol><li><p>三个节点 pre cur tmp</p></li><li><p>保存当前节点的下一个节点到 tmp</p></li><li><p>将当前节点的 next 指向上一个节点 cur.next &#x3D; pre</p></li><li><p>将 pre 和 cur 都向后移动<br>code：</p><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><code class="hljs java"><span class="hljs-keyword">class</span> <span class="hljs-title class_">Solution</span> &#123;<br> <span class="hljs-keyword">public</span> ListNode <span class="hljs-title function_">reverseList</span><span class="hljs-params">(ListNode head)</span> &#123;<br>     <span class="hljs-type">ListNode</span> <span class="hljs-variable">tmp</span> <span class="hljs-operator">=</span> <span class="hljs-literal">null</span>;<br>     <span class="hljs-type">ListNode</span> <span class="hljs-variable">cur</span> <span class="hljs-operator">=</span> head;<br>     <span class="hljs-type">ListNode</span> <span class="hljs-variable">pre</span> <span class="hljs-operator">=</span> <span class="hljs-literal">null</span>;<br>     <span class="hljs-keyword">while</span>(cur !=<span class="hljs-literal">null</span>)&#123;<br>         tmp = cur.next;<br>         cur.next = pre;<br>         pre = cur;<br>         cur = tmp;<br>     &#125;<br>     <span class="hljs-keyword">return</span> pre;<br> &#125;<br></code></pre></td></tr></table></figure></li></ol><h3 id="递归"><a href="#递归" class="headerlink" title="递归"></a>递归</h3><ol><li>最后一个元素反转是本身</li><li>通过函数调用中的栈帧保存链表的上一个元素、以及反转当前元素的 next 指向</li><li>直到调用返回链表第一个元素，至此完全反转<br>code:</li></ol><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><code class="hljs java"><span class="hljs-keyword">class</span> <span class="hljs-title class_">Solution</span> &#123;<br>    <span class="hljs-keyword">public</span> ListNode <span class="hljs-title function_">reverseList</span><span class="hljs-params">(ListNode head)</span> &#123;<br>        <span class="hljs-keyword">if</span> (head == <span class="hljs-literal">null</span> || head.next == <span class="hljs-literal">null</span>) &#123;<br>            <span class="hljs-keyword">return</span> head;<br>        &#125;<br>        <span class="hljs-type">ListNode</span> <span class="hljs-variable">newHead</span> <span class="hljs-operator">=</span> reverseList(head.next);<br>        head.next.next = head;<br>        head.next = <span class="hljs-literal">null</span>;<br>        <span class="hljs-keyword">return</span> newHead;<br>    &#125;<br>&#125;<br></code></pre></td></tr></table></figure>]]></content>
     
     
+    <categories>
       
+      <category>leetcode</category>
       
-    <summary type="html">&lt;h1 id=&quot;206-反转链表&quot;&gt;&lt;a href=&quot;#206-反转链表&quot; class=&quot;headerlink&quot; title=&quot;206. 反转链表&quot;&gt;&lt;/a&gt;&lt;a href=&quot;https://leetcode.cn/problems/reverse-linked-list/&quot;&gt;2</summary>
+    </categories>
+    
+    
+    <tags>
       
-    
-    
-    
-    <category term="leetcode" scheme="https://keennessnewbie.github.io/categories/leetcode/"/>
-    
-    
-    <category term="单链表" scheme="https://keennessnewbie.github.io/tags/%E5%8D%95%E9%93%BE%E8%A1%A8/"/>
-    
-    <category term="递归" scheme="https://keennessnewbie.github.io/tags/%E9%80%92%E5%BD%92/"/>
+      <tag>单链表</tag>
+      
+      <tag>递归</tag>
+      
+    </tags>
     
   </entry>
   
+  
+  
   <entry>
     <title>hello world</title>
-    <link href="https://keennessnewbie.github.io/2022/03/12/hello-world-1/"/>
-    <id>https://keennessnewbie.github.io/2022/03/12/hello-world-1/</id>
-    <published>2022-03-12T04:21:29.000Z</published>
-    <updated>2022-05-18T16:03:07.756Z</updated>
+    <link href="/2022/03/12/hello-world-1/"/>
+    <url>/2022/03/12/hello-world-1/</url>
     
     <content type="html"><![CDATA[<p>knb 的 <code>hello world</code></p>]]></content>
     
     
+    <categories>
       
+      <category>测试hello categories</category>
       
-    <summary type="html">&lt;p&gt;knb 的 &lt;code&gt;hello world&lt;/code&gt;&lt;/p&gt;
-</summary>
+    </categories>
+    
+    
+    <tags>
       
-    
-    
-    
-    <category term="测试hello categories" scheme="https://keennessnewbie.github.io/categories/%E6%B5%8B%E8%AF%95hello-categories/"/>
-    
-    
-    <category term="测试hello tag" scheme="https://keennessnewbie.github.io/tags/%E6%B5%8B%E8%AF%95hello-tag/"/>
+      <tag>测试hello tag</tag>
+      
+    </tags>
     
   </entry>
   
-</feed>
+  
+  
+  
+</search>
